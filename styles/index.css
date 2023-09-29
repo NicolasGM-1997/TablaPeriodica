@@ -1,0 +1,219 @@
+#principal{
+	background-image: url("..\\images\\fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	padding-top: 20px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Trebuchet MS';
+	color: white;
+}
+#centrar p{
+	font-size: 1cm;
+	color: white;
+	text-align: center;
+}
+#tipos-elm{
+	border-spacing: 5px;
+}
+#tipos-elm tr td{
+	font-size: 0.5cm;
+	padding-right: 20px;
+}
+#tipos-elm tr td button{
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	border: none;
+}
+#tabla-periodica{
+	border-spacing: 5px;
+}
+#tabla-periodica tr td button{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	font-size: 0.5cm;
+}
+/* Tipos elementos */
+.metales-alcalinos, #tipo-alcalino{
+	background-color: #FF8811;
+}
+.metales-alcalinos:hover, #tipo-alcalino:hover{
+	background-color: #332211;
+	color: white;
+}
+.metaloides, #tipo-metaloide{
+	background-color: #66BB66;
+}
+.metaloides:hover, #tipo-metaloide:hover{
+	background-color: #332211;
+	color: white;
+}
+.alcalinoterreos, #tipo-alcalinoterreo{
+	background-color: #FFBB99;
+}
+.alcalinoterreos:hover, #tipo-alcalinoterreo:hover{
+	background-color: #332211;
+	color: white;
+}
+.no-metal, #tipo-no-metal{
+	background-color: #9966FF;
+}
+.no-metal:hover, #tipo-no-metal:hover{
+	background-color: #332211;
+	color: white;
+}
+.otros-metales, #tipo-otro-metal{
+	background-color: #116611;
+	color: white;
+}
+.otros-metales:hover, #tipo-otro-metal:hover{
+	background-color: #332211;
+	color: white;
+}
+.halogenos, #tipo-halogeno{
+	background-color: #112277;
+	color: white;
+}
+.halogenos:hover, #tipo-halogeno:hover{
+	background-color: #332211;
+	color: white;
+}
+.metales-trancision, #tipo-metal-trancision{
+	background-color: #CCCC33;
+}
+.metales-trancision:hover, #tipo-metal-trancision:hover{
+	background-color: #332211;
+	color: white;
+}
+.gases-nobles, #tipo-gas-noble{
+	background-color: #881111;
+	color: white;
+}
+.gases-nobles:hover, #tipo-gas-noble:hover{
+	background-color: #332211;
+	color: white;
+}
+.lantanidos, #tipo-lantanido{
+	background-color: #55AAFF;
+}
+.lantanidos:hover, #tipo-lantanido:hover{
+	background-color: #332211;
+	color: white;
+}
+.actinidos, #tipo-actinido{
+	background-color: #880088;
+	color: white;
+}
+.actinidos:hover, #tipo-actinido:hover{
+	background-color: #332211;
+	color: white;
+}
+.neutro, #tipo-neutro{
+	background-color: #444444;
+	color: white;
+}
+.neutro:hover, #tipo-neutro:hover{
+	background-color: #332211;
+	color: white;
+}
+.tooltip {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	color: #fff;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 1;
+}
+.tooltip-link:hover + .tooltip {
+	display: block;
+}
+/* Informacion */
+#info section{
+	display: flex;
+	padding: calc(1% + 5px);
+	margin: calc(1% + 5px);
+	background-color: lightgreen;
+	border-radius: 15px;
+}
+#info section div{
+	flex: 1;
+	text-align: justify;
+	margin: auto;
+}
+#info section div .titulo{
+	font-size: 1cm;
+}
+#info section div .titulo:hover{
+	font-size: 1.2cm;
+	text-decoration: underline;
+}
+#info section div .descripcion{
+	font-size: 0.5cm;
+}
+#info section div p{
+	padding-left: 50px;
+	padding-right: 50px;
+	letter-spacing: 1.5px;
+}
+#info section img{
+	width: 100%;
+	height: 400px;
+	border-radius: 5%;
+	box-shadow: 0 0 15px 15px rgba(150, 20, 220, 0.5);
+}
+/* pagina responsiva */
+@media screen and (max-width: 768px) {
+	/* tabla periodica*/
+	#centrar p{
+		font-size: 0.6cm;
+	}
+	#tipos-elm tr td{
+		font-size: 0.25cm;
+	}
+	#tipos-elm tr td button{
+		width: 15px;
+		height: 15px;
+	}
+	#tabla-periodica{
+		border-spacing: 0px;
+	}
+	#tabla-periodica tr td button{
+		width: 20px;
+		height: 20px;
+		font-size: 0.2cm;
+		border-radius: 5px;
+	}
+	/* informacion */
+	#info section{
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#info section div{
+		display: block;
+	}
+	#info section div img{
+		display: none;
+	}
+	#info section div .titulo{
+		font-size: 0.6cm;
+	}
+	#info section div .titulo:hover{
+		font-size: 0.8cm;
+	}
+	#info section div .descripcion{
+		font-size: 0.3cm;
+	}
+	#info section div p{
+		padding-left: 20px;
+		padding-right: 20px;
+		letter-spacing: 1px;
+	}
+}

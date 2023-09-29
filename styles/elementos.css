@@ -1,0 +1,285 @@
+#principal, #datos-elemento{
+	margin: calc(2% + 10px);
+	font-family: 'Trebuchet MS';
+	background-color: lightgreen;
+	border-radius: 10px;
+}
+/* nombre elemento */
+#nombre-elemento{
+	padding-top: 30px;
+	font-size: 1cm;
+	text-align: center;
+}
+#nombre-elemento:hover{
+	font-size: 1.5cm;
+	text-decoration: underline;
+}
+/* datos elemento */
+#datos{
+	display: flex;
+	padding: 5%;
+}
+#datos div{
+	display: 1;
+	width: 30%;
+	height: 300px;
+}
+#info-elemento{
+	border-radius: 5px;
+}
+#info-elemento{
+	text-align: center;
+	border-radius: 10px;
+}
+#info-elemento table{
+	border-spacing: 0;
+}
+#info-elemento table tr{
+	border-spacing: 0;
+
+}
+#info-elemento table tr td{
+	width: 200px;
+	background-color: #AA77FF;
+	border: solid;
+	border-color: #333;
+	border-width: 3px;
+	color: #333;
+	font-weight: bold;
+}
+#info-elemento table tr .pequeño{
+	height: 30px;
+	font-size: 0.3cm;
+}
+#info-elemento table tr .mediano{
+	height: 40px;
+	font-size: 0.3cm;
+}
+#info-elemento table tr .grande{
+	height: 200px;
+	font-size: 2cm;
+}
+/* atomo */
+#atomo{
+	height: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+/* descripcion */
+#descripcion, #historia{
+	font-size: 0.5cm;
+	text-align: justify;
+	justify-content: center;
+}
+#descripcion{
+	overflow: auto;
+}
+/* historia */
+#datos-elemento{
+	display: flex;
+	padding: 5%;
+}
+#datos-elemento>div{
+	flex: 1;
+	margin-left: 20px;
+	margin-right: 20px; 
+}
+#datos-elemento div p{
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+#titulo{
+	font-size: 1cm;
+}
+/* relaciones */
+#relacionado{
+	display: block;
+	font-size: 0.5cm;
+}
+#relacionado #div1{
+	height: 80%;
+	display: block;
+}
+#relacionado #div2{
+	display: block;
+}
+#div2{
+	display: flex;
+	text-align: center;
+}
+/* Tipos elementos */
+.metales-alcalinos{
+	background-color: #FF8811;
+}
+.metales-alcalinos:hover{
+	background-color: #332211;
+	color: white;
+}
+.metaloides{
+	background-color: #66BB66;
+}
+.metaloides:hover{
+	background-color: #332211;
+	color: white;
+}
+.alcalinoterreos{
+	background-color: #FFBB99;
+}
+.alcalinoterreos:hover{
+	background-color: #332211;
+	color: white;
+}
+.no-metal{
+	background-color: #9966FF;
+}
+.no-metal:hover{
+	background-color: #332211;
+	color: white;
+}
+.otros-metales{
+	background-color: #116611;
+	color: white;
+}
+.otros-metales:hover{
+	background-color: #332211;
+	color: white;
+}
+.halogenos{
+	background-color: #112277;
+	color: white;
+}
+.halogenos:hover{
+	background-color: #332211;
+	color: white;
+}
+.metales-trancision{
+	background-color: #CCCC33;
+}
+.metales-trancision:hover{
+	background-color: #332211;
+	color: white;
+}
+.gases-nobles{
+	background-color: #881111;
+	color: white;
+}
+.gases-nobles:hover{
+	background-color: #332211;
+	color: white;
+}
+.lantanidos{
+	background-color: #55AAFF;
+}
+.lantanidos:hover{
+	background-color: #332211;
+	color: white;
+}
+.actinidos{
+	background-color: #880088;
+	color: white;
+}
+.actinidos:hover{
+	background-color: #332211;
+	color: white;
+}
+.neutro{
+	background-color: #444444;
+	color: white;
+}
+.neutro:hover{
+	background-color: #332211;
+	color: white;
+}
+/* grupo relacion */
+#grupos{
+	font-size: 1.5em;
+}
+#grupo-relacion tr td{
+	font-size: 1em;
+	width: 100px;
+}
+#grupo-relacion tr td button{
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 0.5cm;
+}
+/* anterior y siguiente */
+.simbolo{
+	background-color: #AA77FF;
+	margin: 10px;
+	width: 75px;
+	height: 75px;
+	border-radius: 5px;
+	border: none;
+	font-size: 0.5cm;
+}
+.simbolo2{
+	background-color: #FDB975;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	font-size: 0.5cm;
+}
+@media screen and (max-width: 768px) {
+	/* info - atomo */
+	#nombre-elemento{
+		font-size: 0.7cm;
+	}
+	#nombre-elemento:hover{
+		font-size: 1cm;
+	}
+	#datos{
+		display: block;
+		padding: 5%;
+	}
+	#datos div{
+		display: block;
+		width: 100%;
+	}
+	#datos #tabla{
+		margin: 0 auto;
+		width: 300px;
+	}
+	#datos #atomo{
+		text-align: center;
+	}
+	#datos #descripcion{
+		text-align: justify;
+		height: 300px;
+		overflow: auto;
+	}
+	#atomo{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#descripcion{
+		font-size: 0.4cm;
+		padding: 35px;
+	}
+	/* historia - relacion */
+	#datos-elemento{
+		display: block;
+	}
+	#datos-elemento>div{
+		display: block;
+	}
+	#historia #titulo{
+		font-size: 0.7cm;
+	}
+	#historia p{
+		font-size: 0.4cm;
+	}
+	#relacionado{
+		font-size: 0.3cm;
+	}
+	#historia, #relacionado, #div1, #div2{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}

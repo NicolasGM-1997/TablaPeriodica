@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/icono.png">
+	<link rel="stylesheet" type="text/css" href="../styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="../styles/elementos.css">
+	<title>Hidrogeno - (H)</title>
+</head>
+<body>
+<header>
+	<div>
+		<nav id="barra-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Documentation</a></li>
+		</nav>
+	</div>
+	<div id="busqueda">
+		<img src="../images/lupa.png" onclick="buscar();">
+		<input type="search" id="buscar" placeholder="Busqueda...">
+	</div>
+</header>
+<main>
+	<section id="principal">
+		<p id="nombre-elemento"></p>
+		<div id="datos">
+			<div id="info-elemento">
+				<table id="tabla">
+					<tr>
+						<td id="numero-elemento" class="pequeño"></td>
+						<td id="electronegatividad" class="pequeño"></td>
+					</tr>
+					<tr>
+						<td colspan=2 id="simbolo-elemento" class="grande"></td>
+					</tr>
+					<tr>
+						<td colspan="2" id="configuracion-atomica" class="mediano"></td>
+					</tr>
+					<tr>
+						<td id="masa-elemento" class="pequeño"></td>
+						<td id="grupo-elemento" class="pequeño"></td>
+					</tr>
+				</table>
+			</div>
+			<div id="atomo">
+			</div>
+			<div id="descripcion">
+				<p>
+				El hidrógeno es el primer elemento de la tabla periódica. Es el elemento químico más ligero que existe, su átomo está formado por un protón y un electrón y es estable en forma de molécula diatómica (H2). En condiciones normales se encuentra en estado gaseoso, y es insípido, incoloro e inodoro.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="datos-elemento">
+		<div id="historia">
+			<p id="titulo">Historia</p>
+			<p>
+			El hidrógeno diatómico gaseoso, H2, fue el primero producido artificialmente y formalmente descrito por T. von Hohenheim (Paracelso), que lo obtuvo artificialmente mezclando metales con ácidos fuertes. Paracelso no era consciente de que el gas inflamable generado en estas reacciones químicas estaba compuesto por un nuevo elemento químico. En 1671, Robert Boyle redescubrió y describió la reacción que se producía entre limaduras de hierro y ácidos diluidos, lo que resulta en la producción de gas hidrógeno.En 1766, Henry Cavendish fue el primero en reconocer el hidrógeno gaseoso como una sustancia discreta, identificando el gas producido en la reacción metal-ácido como «aire inflamable» y descubriendo más profundamente, en 1781, que el gas produce agua cuando se quema. Generalmente, se le da el crédito por su descubrimiento como un elemento químico.En 1783, Antoine Lavoisier dio al elemento el nombre de hidrógeno (del griego υδρώ (hydro), agua y γένος-ου (genes) generar, es decir, «productor de agua») cuando él y Laplace reprodujeron el descubrimiento de Cavendish, donde se produce agua cuando se quema hidrógeno.
+			</p>
+		</div>
+		<div id="relacionado">
+			<div id="div1">
+				<p id="grupos"></p>
+				<table id="grupo-relacion">
+
+				</table>
+			</div>
+			<div id="div2">
+				
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div>
+		<ul>
+			<li>Nicolas Gomez Morales</li>
+			<li>(+57) 3223879145</li>
+			<li>nicolas.gomezm@uniagustiniana.edu.co</li>
+			<li>Bogota - Colombia</li>
+			<li>Universidad Agustiniana</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li><a href="https://www.minciencias.gov.co/">Ministerio de Ciencia y Tecnologia</a></li>
+			<li><a href="https://www.biblored.gov.co/">Bibliotecas Publicas de Bogota</a></li>
+			<li><a href="https://www.uniagustiniana.edu.co/biblioteca">Biblioteca Universidad Agustiniana</a></li>
+			<li><a href="https://es.wikipedia.org/">Wikipedia</a></li>
+			<li><a href="https://exploraciencia.com/">Explora Ciencia</a></li>
+		</ul>
+	</div>
+</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+	<script src="../scripts/busqueda.js"></script>
+	<script type="module" src="../scripts/elementos.js"></script>
+	<script type="module" src="../scripts/atomo.js"></script>
+	<script type="module" src="../scripts/nav.js"></script>
+</body>
+</html>

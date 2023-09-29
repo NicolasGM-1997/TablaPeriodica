@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	background-color: #AAFFAA;
+}
+/* navegacion */
+header{
+	display: flex;
+	background-color: #336633;
+ 	margin: 0;
+	padding-left: 5%;
+	font-family: 'Trebuchet MS';
+	overflow: hidden;
+}
+header div{
+	flex: 1;
+}
+#barra-nav li{
+	float: left;
+	list-style-type: none;
+	overflow: hidden;
+}
+#barra-nav li a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 0.5cm;
+	padding: 20px 20px;	
+}
+#barra-nav li a:hover{
+	background-color: lightgreen;
+	text-decoration: underline;
+	text-decoration-color: darkgreen;
+	text-decoration-thickness: 2px;
+	color: brown;
+}
+input[type="search"]{
+	width: 50%;
+	height: 50%;
+	border-radius: 5px;
+	border: 1px solid;
+	padding-left: 40px;
+	font-family: 'Trebuchet MS';
+}
+/* busqueda */
+#busqueda{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#busqueda img{
+	transform: translateX(150%);
+	width: 20px	;
+}
+/* pie de pagina */ 
+footer{
+	display: flex;
+	background-color: #336633;
+	font-family: 'Trebuchet MS';
+	overflow: hidden;
+	color: white;
+}
+footer div{
+	flex: 1;
+	text-align: center;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+footer div ul{
+	list-style-type: none;
+	font-size: 0.5cm;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	color: skyblue;
+}
+@media screen and (max-width: 768px) {
+	/* navegacion */
+	#barra-nav li a{
+		font-size: 0.3cm;
+		padding: 10px 10px;	
+	}
+	input[type="search"]{
+		width: 75%;
+	}
+	#busqueda img{
+		transform: translateX(150%);
+		width: 10px	;
+	}
+	/* pie de pagina*/
+	footer div{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	footer div ul{
+		font-size: 0.2cm;
+	}
+}

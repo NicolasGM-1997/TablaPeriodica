@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/icono.png">
+	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<title>Elementos</title>
+</head>
+<body>
+<header>
+	<div>
+		<nav id="barra-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Documentation</a></li>
+		</nav>
+	</div>
+	<div id="busqueda">
+		<img src="images/lupa.png" onclick="buscar();">
+		<input type="search" id="buscar" placeholder="Busqueda...">
+	</div>
+</header>
+<main>
+	<section id="principal">
+	<div id="centrar">
+		<p>Elementos de La Tabla Periodica</p>
+		<center><br>
+			<table id="tipos-elm">
+				<tr>
+					<td><button id="tipo-alcalino" onclick="alcalinos();"></button></td>
+					<td>METALES ALCALINOS</td>
+					<td><button id="tipo-metaloide" onclick="metaloides();"></button></td>
+					<td>METALOIDES</td>
+				</tr>
+				<tr>
+					<td><button id="tipo-alcalinoterreo" onclick="alcalinoterreos();"></button></td>
+					<td>ALCALINETERREOS</td>
+					<td><button id="tipo-no-metal" onclick="no_metales();"></button></td>
+					<td>NO METALES</td>
+				</tr>
+				<tr>
+					<td><button id="tipo-otro-metal" onclick="otros_metales();"></button></td>
+					<td>OTROS METALES</td>
+					<td><button id="tipo-halogeno" onclick="halogenos();"></button></td>
+					<td>HALOGENOS</td>
+				</tr>
+				<tr>
+					<td><button id="tipo-metal-trancision" onclick="metales_trancision();"></button></td>
+					<td>METALES DE TRANCISION</td>
+					<td><button id="tipo-gas-noble" onclick="gases_nobles();"></button></td>
+					<td>GASES NOBLES</td>
+				</tr>
+				<tr>
+					<td><button id="tipo-lantanido" onclick="lantanidos();"></button></td>
+					<td>LANTANIDOS</td>
+					<td><button id="tipo-actinido" onclick="actinidos();"></button></td>
+					<td>ACTINIDOS</td>
+				</tr>
+			</table>
+		</center>
+		<table id="tabla-periodica">
+			<tr>
+				<td><button class="no-metal tooltip-link">H</button><div class="tooltip">Hidrogeno</div></td>
+				<td colspan="16"></td>
+				<td><button class="gases-nobles tooltip-link">HE</button><div class="tooltip">Helio</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">LI</button><div class="tooltip">Litio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">BE</button><div class="tooltip">Berilio</div></td>
+				<td colspan="10"></td>
+				<td><button class="metaloides tooltip-link">B</button><div class="tooltip">Boro</div></td>
+				<td><button class="no-metal tooltip-link">C</button><div class="tooltip">Carbono</div></td>
+				<td><button class="no-metal tooltip-link">N</button><div class="tooltip">Nitrogreno</div></td>
+				<td><button class="no-metal tooltip-link">O</button><div class="tooltip">Oxigeno</div></td>
+				<td><button class="halogenos tooltip-link">F</button><div class="tooltip">Fluor</div></td>
+				<td><button class="gases-nobles tooltip-link">NE</button><div class="tooltip">Neon</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">NA</button><div class="tooltip">Sodio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">MG</button><div class="tooltip">Magnesio</div></td>
+				<td colspan="10"></td>
+				<td><button class="otros-metales tooltip-link">AL</button><div class="tooltip">Aluminio</div></td>
+				<td><button class="metaloides tooltip-link">SI</button><div class="tooltip">Silicio</div></td>
+				<td><button class="no-metal tooltip-link">P</button><div class="tooltip">Posforo</div></td>
+				<td><button class="no-metal tooltip-link">S</button><div class="tooltip">Azufre</div></td>
+				<td><button class="halogenos tooltip-link">CL</button><div class="tooltip">Cloro</div></td>
+				<td><button class="gases-nobles tooltip-link">AR</button><div class="tooltip">Argon</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">K</button><div class="tooltip">Potasio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">CA</button><div class="tooltip">Calcio</div></td>
+				<td><button class="metales-trancision tooltip-link">SC</button><div class="tooltip">Escandio</div></td>
+				<td><button class="metales-trancision tooltip-link">TI</button><div class="tooltip">Titanio</div></td>
+				<td><button class="metales-trancision tooltip-link">V</button><div class="tooltip">Vanadio</div></td>
+				<td><button class="metales-trancision tooltip-link">CR</button><div class="tooltip">Cromo</div></td>
+				<td><button class="metales-trancision tooltip-link">MN</button><div class="tooltip">Manganeso</div></td>
+				<td><button class="metales-trancision tooltip-link">FE</button><div class="tooltip">Hierro</div></td>
+				<td><button class="metales-trancision tooltip-link">CO</button><div class="tooltip">Cobre</div></td>
+				<td><button class="metales-trancision tooltip-link">NI</button><div class="tooltip">Niquel</div></td>
+				<td><button class="metales-trancision tooltip-link">CU</button><div class="tooltip">Cobre</div></td>
+				<td><button class="metales-trancision tooltip-link">ZN</button><div class="tooltip">Zinc</div></td>
+				<td><button class="otros-metales tooltip-link">GA</button><div class="tooltip">Galio</div></td>
+				<td><button class="metaloides tooltip-link">GE</button><div class="tooltip">Germanio</div></td>
+				<td><button class="metaloides tooltip-link">AS</button><div class="tooltip">Arsenico</div></td>
+				<td><button class="no-metal tooltip-link">SE</button><div class="tooltip">Selenio</div></td>
+				<td><button class="halogenos tooltip-link">BR</button><div class="tooltip">Bromo</div></td>
+				<td><button class="gases-nobles tooltip-link">KR</button><div class="tooltip">Kripton</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">RB</button><div class="tooltip">Rubidio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">SR</button><div class="tooltip">Estrancio</div></td>
+				<td><button class="metales-trancision tooltip-link">Y</button><div class="tooltip">Itrio</div></td>
+				<td><button class="metales-trancision tooltip-link">ZR</button><div class="tooltip">Zirconio</div></td>
+				<td><button class="metales-trancision tooltip-link">NB</button><div class="tooltip">Niobio</div></td>
+				<td><button class="metales-trancision tooltip-link">MO</button><div class="tooltip">Molibdeno</div></td>
+				<td><button class="metales-trancision tooltip-link">TC</button><div class="tooltip">Tecnesio</div></td>
+				<td><button class="metales-trancision tooltip-link">RU</button><div class="tooltip">Rutenio</div></td>
+				<td><button class="metales-trancision tooltip-link">RH</button><div class="tooltip">Rodio</div></td>
+				<td><button class="metales-trancision tooltip-link">PD</button><div class="tooltip">Paladio</div></td>
+				<td><button class="metales-trancision tooltip-link">AG</button><div class="tooltip">Plata</div></td>
+				<td><button class="metales-trancision tooltip-link">CD</button><div class="tooltip">Cadmio</div></td>
+				<td><button class="otros-metales tooltip-link">IN</button><div class="tooltip">Indio</div></td>
+				<td><button class="otros-metales tooltip-link">SN</button><div class="tooltip">Estaño</div></td>
+				<td><button class="metaloides tooltip-link">SB</button><div class="tooltip">Antimonio</div></td>
+				<td><button class="metaloides tooltip-link">TE</button><div class="tooltip">Telurio</div></td>
+				<td><button class="halogenos tooltip-link">I</button><div class="tooltip">Yodo</div></td>
+				<td><button class="gases-nobles tooltip-link">XE</button><div class="tooltip">Xenon</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">CS</button><div class="tooltip">Cesio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">BA</button><div class="tooltip">Bario</div></td>
+				<td><button class="lantanidos tooltip-link">LA</button><div class="tooltip">Lantanido</div></td>
+				<td><button class="metales-trancision tooltip-link">HF</button><div class="tooltip">Hafnio</div></td>
+				<td><button class="metales-trancision tooltip-link">TA</button><div class="tooltip">Tantalo</div></td>
+				<td><button class="metales-trancision tooltip-link">W</button><div class="tooltip">Wolframio</div></td>
+				<td><button class="metales-trancision tooltip-link">RE</button><div class="tooltip">Renio</div></td>
+				<td><button class="metales-trancision tooltip-link">OS</button><div class="tooltip">Osmio</div></td>
+				<td><button class="metales-trancision tooltip-link">IR</button><div class="tooltip">Iridio</div></td>
+				<td><button class="metales-trancision tooltip-link">PT</button><div class="tooltip">Platino</div></td>
+				<td><button class="metales-trancision tooltip-link">AU</button><div class="tooltip">Oro</div></td>
+				<td><button class="metales-trancision tooltip-link">HG</button><div class="tooltip">Mercurio</div></td>
+				<td><button class="otros-metales tooltip-link">TL</button><div class="tooltip">Talio</div></td>
+				<td><button class="otros-metales tooltip-link">PB</button><div class="tooltip">Plomo</div></td>
+				<td><button class="otros-metales tooltip-link">BI</button><div class="tooltip">Bismuto</div></td>
+				<td><button class="metaloides tooltip-link">PO</button><div class="tooltip">Polonio</div></td>
+				<td><button class="halogenos tooltip-link">AT</button><div class="tooltip">Astato</div></td>
+				<td><button class="gases-nobles tooltip-link">RN</button><div class="tooltip">Radon</div></td>
+			</tr>
+			<tr>
+				<td><button class="metales-alcalinos tooltip-link">FR</button><div class="tooltip">Francio</div></td>
+				<td><button class="alcalinoterreos tooltip-link">RA</button><div class="tooltip">Radio</div></td>
+				<td><button class="actinidos tooltip-link">AC</button><div class="tooltip">Actinido</div></td>
+				<td><button class="metales-trancision tooltip-link">RF</button><div class="tooltip">Rutherfordio</div></td>
+				<td><button class="metales-trancision tooltip-link">DB</button><div class="tooltip">Dubnio</div></td>
+				<td><button class="metales-trancision tooltip-link">SG</button><div class="tooltip">Seaborgio</div></td>
+				<td><button class="metales-trancision tooltip-link">BH</button><div class="tooltip">Bohrio</div></td>
+				<td><button class="metales-trancision tooltip-link">HS</button><div class="tooltip">Hassio</div></td>
+				<td><button class="neutro tooltip-link">MT</button><div class="tooltip">Meitnerio</div></td>
+				<td><button class="neutro tooltip-link">DS</button><div class="tooltip">Darmstatio</div></td>
+				<td><button class="neutro tooltip-link">RG</button><div class="tooltip">Roengtenio</div></td>
+				<td><button class="neutro tooltip-link">CN</button><div class="tooltip">Copernicio</div></td>
+				<td><button class="neutro tooltip-link">NH</button><div class="tooltip">Nihonio</div></td>
+				<td><button class="neutro tooltip-link">FL</button><div class="tooltip">Flerovio</div></td>
+				<td><button class="neutro tooltip-link">MC</button><div class="tooltip">Moscovio</div></td>
+				<td><button class="neutro tooltip-link">LV</button><div class="tooltip">Livermorio</div></td>
+				<td><button class="neutro tooltip-link">TS</button><div class="tooltip">Teneso</div></td>
+				<td><button class="neutro tooltip-link">OG</button><div class="tooltip">Oganeson</div></td>
+			</tr>
+			<tr id="espacio"></tr>
+			<tr>
+				<td colspan="2"></td>
+				<td><button class="lantanidos tooltip-link">CE</button><div class="tooltip">Cerio</div></td>
+				<td><button class="lantanidos tooltip-link">PR</button><div class="tooltip">Praseodimio</div></td>
+				<td><button class="lantanidos tooltip-link">ND</button><div class="tooltip">Neodimio</div></td>
+				<td><button class="lantanidos tooltip-link">PM</button><div class="tooltip">Prometio</div></td>
+				<td><button class="lantanidos tooltip-link">SM</button><div class="tooltip">Samario</div></td>
+				<td><button class="lantanidos tooltip-link">EU</button><div class="tooltip">Europio</div></td>
+				<td><button class="lantanidos tooltip-link">GD</button><div class="tooltip">Gadolinio</div></td>
+				<td><button class="lantanidos tooltip-link">TB</button><div class="tooltip">Terbio</div></td>
+				<td><button class="lantanidos tooltip-link">DY</button><div class="tooltip">Disprosio</div></td>
+				<td><button class="lantanidos tooltip-link">HO</button><div class="tooltip">Holmio</div></td>
+				<td><button class="lantanidos tooltip-link">ER</button><div class="tooltip">Erbio</div></td>
+				<td><button class="lantanidos tooltip-link">TM</button><div class="tooltip">Tulio</div></td>
+				<td><button class="lantanidos tooltip-link">YB</button><div class="tooltip">Yterbio</div></td>
+				<td><button class="lantanidos tooltip-link">LU</button><div class="tooltip">Lutecio</div></td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td><button class="actinidos tooltip-link">TH</button><div class="tooltip">Torio</div></td>
+				<td><button class="actinidos tooltip-link">PA</button><div class="tooltip">Protactino</div></td>
+				<td><button class="actinidos tooltip-link">U</button><div class="tooltip">Uranio</div></td>
+				<td><button class="actinidos tooltip-link">NP</button><div class="tooltip">Neptunio</div></td>
+				<td><button class="actinidos tooltip-link">PU</button><div class="tooltip">Plutonio</div></td>
+				<td><button class="actinidos tooltip-link">AM</button><div class="tooltip">Americio</div></td>
+				<td><button class="actinidos tooltip-link">CM</button><div class="tooltip">Curio</div></td>
+				<td><button class="actinidos tooltip-link">BK</button><div class="tooltip">Berkelio</div></td>
+				<td><button class="actinidos tooltip-link">CF</button><div class="tooltip">Californio</div></td>
+				<td><button class="actinidos tooltip-link">ES</button><div class="tooltip">Einstenio</div></td>
+				<td><button class="actinidos tooltip-link">FM</button><div class="tooltip">Fermio</div></td>
+				<td><button class="actinidos tooltip-link">MD</button><div class="tooltip">Mendelevio</div></td>
+				<td><button class="actinidos tooltip-link">NO</button><div class="tooltip">Nobelio</div></td>
+				<td><button class="actinidos tooltip-link">LR</button><div class="tooltip">Laurencio</div></td>
+			</tr>
+		</table>	
+	</div>
+	</section>
+	<section id="info">
+		<section id="alcalinos">
+			<div><img src="images/litio-alcalinos.jpg"></div>
+			<div>
+				<p class="titulo">Metales Alcalinos</p><br>
+				<p class="descripcion">
+				Los metales alcalinos son un grupo de elementos altamente reactivos en el grupo 1 de la tabla periódica. Son blandos, tienen bajos puntos de fusión y ebullición, y son buenos conductores de electricidad. Los metales alcalinos incluyen litio, sodio, potasio, rubidio, cesio y francio, y son esenciales en muchas reacciones químicas y funciones biológicas.
+				</p>
+			</div>
+		</section>
+		<section id="metaloides">
+			<div>
+				<p class="titulo">Metaloides</p><br>
+				<p class="descripcion">
+				Los metaloides, también conocidos como semimetales o elementos de transición interna, son un grupo de elementos químicos que exhiben propiedades intermedias entre los metales y los no metales en la tabla periódica. Estos elementos se encuentran en una región diagonal que separa claramente los metales ubicados en la parte izquierda de la tabla periódica de los no metales en la parte derecha.
+				</p>
+			</div>
+			<div><img src="images/telurio-metaloide.jpg"></div>
+		</section>
+		<section id="alcalinoterreos">
+			<div><img src="images/magnesio-alcalinoterreo.jpg"></div>
+			<div>
+				<p class="titulo">Metales Alcalinoterreos</p><br>
+				<p class="descripcion">
+				Los alcalinotérreos son un grupo de elementos químicos del grupo 2 de la tabla periódica. Son metales que tienen una valencia de +2 y son menos reactivos que los metales alcalinos del grupo 1. Tienen densidades moderadas, buenos puntos de fusión y son buenos conductores de electricidad. Ejemplos de alcalinotérreos incluyen el calcio, el magnesio y el berilio, y se utilizan en una variedad de aplicaciones industriales y biológicas.
+				</p>
+			</div>
+		</section>
+		<section id="no-metales">
+			<div>
+				<p class="titulo">No Metales</p><br>
+				<p class="descripcion">
+				Los no metales son elementos de la tabla periódica que generalmente no conducen electricidad ni calor, tienen brillo opaco, baja densidad y forman compuestos mediante la ganancia, pérdida o compartición de electrones. Algunos ejemplos incluyen el hidrógeno, oxígeno, nitrógeno, carbono, flúor, fósforo, azufre y cloro.
+				</p>
+			</div>
+			<div><img src="images/nitrogeno-nometal.jpg"></div>
+		</section>
+		<section id="otros-metales">
+			<div><img src="images/plomo-otrometal.jpg"></div>
+			<div>
+				<p class="titulo">Otros Metales</p><br>
+				<p class="descripcion">
+				Los "otros metales" en la tabla periódica son elementos que tienen algunas propiedades metálicas, como la conductividad eléctrica, pero en menor medida que los metales típicos. Son diversos en sus características y tienen usos específicos en tecnología y química. Ejemplos incluyen el galio, indio, talio, bismuto, antimonio y polonio.	
+				</p>
+			</div>
+		</section>
+		<section id="halogenos">
+			<div>
+				<p class="titulo">Halogenos</p><br>
+				<p class="descripcion">
+				Los halógenos son elementos químicos altamente reactivos que forman compuestos fácilmente. Incluyen el flúor, cloro, bromo, yodo y astato. Tienen estados físicos variados y son esenciales en la química y diversas aplicaciones, como la purificación de agua y la síntesis de productos químicos.	
+				</p>
+			</div>
+			<div><img src="images/yodo-halogeno.jpg"></div>
+		</section>
+		<section id="metales-trancision">
+			<div><img src="images/mercurio-metal-trancision.jpg"></div>
+			<div>
+				<p class="titulo">Metales de Transicion</p><br>
+				<p class="descripcion">
+				Los metales de transición son elementos que tienen buenas propiedades conductoras y son maleables. Pueden tener varios estados de oxidación, colores y propiedades magnéticas variadas. Se utilizan en diversas aplicaciones, como la construcción y la tecnología, debido a su versatilidad y utilidad en reacciones químicas. Ejemplos incluyen hierro, cobre, zinc y platino.
+				</p>
+			</div>
+		</section>
+		<section id="gases-nobles">
+			<div>
+				<p class="titulo">Gases Nobles</p><br>
+				<p class="descripcion">
+				Los gases nobles son elementos químicos muy estables que no reaccionan fácilmente con otros elementos. Son gases a temperatura ambiente y tienen aplicaciones en tecnología, como iluminación y láseres. Ejemplos incluyen el helio, neón, argón, criptón, xenón y radón.	
+				</p>
+			</div>
+			<div><img src="images/neon-gasnoble.jpg"></div>
+		</section>
+		<section id="lantanidos">
+			<div><img src="images/europio-lantanido.jpg"></div>
+			<div>
+				<p class="titulo">Lantanidos</p><br>
+				<p class="descripcion">
+				Los lantánidos son un conjunto de 15 elementos que comienzan con el lantano (La) y terminan con el lutecio (Lu).Son conocidos por sus propiedades químicas y físicas similares, lo que los hace difíciles de separar y distinguir. A menudo se utilizan en aplicaciones tecnológicas, como en imanes de alta potencia y lámparas de arco de carbono.
+				</p>
+			</div>
+		</section>
+		<section id="actinidos">
+			<div>
+				<p class="titulo">Actinidos</p><br>
+				<p class="descripcion">
+				Los actínidos son un conjunto de 15 elementos que comienzan con el actinio (Ac) y terminan con el lawrencio (Lr). Son conocidos por ser radiactivos y algunos de ellos se utilizan en reactores nucleares y armas nucleares. El uranio y el plutonio, dos actínidos, son especialmente relevantes en la producción de energía nuclear.
+				</p>
+			</div>
+			<div><img src="images/uranio-actinido.jpg"></div>
+		</section>
+		<section>
+			<div><img src="images/laboratorio.jpg"></div>
+			<div>
+				<p class="titulo">Ultimos descubrimientos</p><br>
+				<p class="descripcion">
+				Debido a su extrema inestabilidad y vida útil muy corta los elementos 113 al 118 son elementos sintéticos y altamente radiactivos, estos elementos no tienen aplicaciones prácticas y se estudian principalmente por razones científicas. Su síntesis requiere instalaciones de investigación altamente especializadas y solo se han producido pequeñas cantidades de estos elementos en laboratorios de física nuclear.
+				</p>
+			</div>
+		</section>
+	</section>
+</main>
+<footer>
+	<div>
+		<ul>
+			<li>Nicolas Gomez Morales</li>
+			<li>(+57) 3223879145</li>
+			<li>nicolas.gomezm@uniagustiniana.edu.co</li>
+			<li>Bogota - Colombia</li>
+			<li>Universidad Agustiniana</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li><a href="https://www.minciencias.gov.co/">Ministerio de Ciencia y Tecnologia</a></li>
+			<li><a href="https://www.biblored.gov.co/">Bibliotecas Publicas de Bogota</a></li>
+			<li><a href="https://www.uniagustiniana.edu.co/biblioteca">Biblioteca Universidad Agustiniana</a></li>
+			<li><a href="https://es.wikipedia.org/">Wikipedia</a></li>
+			<li><a href="https://exploraciencia.com/">Explora Ciencia</a></li>
+			<li><a href="https://www.google.com" class="tooltip-link">Google</a>
+				<div class="tooltip">Este es un motor de búsqueda en línea.</div></li>
+		</ul>
+	</div>
+</footer>
+	<script src="scripts/nav.js"></script>
+	<script src="scripts/busqueda.js"></script>
+</body>
+</html>
